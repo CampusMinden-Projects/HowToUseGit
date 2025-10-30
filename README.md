@@ -50,30 +50,30 @@ https://github.com/
 This is necessary for every device!
 
 1. Click on your Icon in the top right and select `Settings`
-![[add_ssh_key_1.png]]
+![Add SSH Key 1](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_1.png?raw=true)
 
 2. Click on `SSH and GPG keys`
-![[add_ssh_key_2.png]]
+![Add SSH Key 2](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_2.png?raw=true)
 
 3. Click on `New SSH Key`, past your generated ssh key and use a usefull `Title` for your SSH Key. For example "Work Laptop".
-![[add_ssh_key_4.png]]
+![Add SSH Key 4](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_4.png?raw=true)
 
 ## Clone repository
 
 Open the repos main page, click on Code and select SSH. Copy the URL.
-![[clone_repo.png]]
+![clone_repo.png](https://raw.githubusercontent.com/CampusMinden-Projects/HowToUseGit/refs/heads/main/images/clone_repo.png)
 
 You are free to use Git Desktop, Git Bash, Tortoise Git or whatever.
-For this document we use Tortoise Git. (see [[README#install Tortoise Git]])
+For this document we use Tortoise Git. (see [install Tortoise Git](#install-tortoise-git)
 
 1. open the folder you want to past the repo in and select git clone from the context menu.
-![[clone_repo_2.png]]
+![clone_repo_2.png](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/clone_repo_2.png?raw=true)
 
 2. past the URL and click OK.
-![[clone_repo_3.png]]
+![clone_repo_3.png](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/clone_repo_3.png?raw=true)
 
 3. The repo will be copied to you local system.
-![[clone_repo_4.png]]
+![clone_repo_4.png](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/clone_repo_4.png?raw=true)
 
 ## working with git
 
@@ -83,10 +83,10 @@ You can do any modifications you want in you local repo. (Although deleting the 
 
 One you are at a point, where your changes are a `finished subproject` you can `commit` your changes using `git commit`. 
 - Committed changes are still local. 
-- You can decide, if you want to commit to the main branch, another branch or create a new one. (see [[README#branches]])
+- You can decide, if you want to commit to the main branch, another branch or create a new one. (see [Branches](#branches))
 - You must leave a short message, describing the changes in the current commit
 - Select the files you want to include in the commit
-![[commit_1.png]]
+![commit_1.png](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/commit_1.png?raw=true)
 
 ### push local commits
 
