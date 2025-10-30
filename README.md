@@ -1,1 +1,112 @@
 # HowToUseGit
+
+Our projects are stored inside git organizations on github. The organization we be created by us at the beginning of your project. You have to provide your github account name to be added the the `organization`.
+We encourage you to use git through your project development process and to take advantage of gits features.
+This quick guide provides a basic stating point for working with git. For more information use google or follow the guide on https://rogerdudler.github.io/git-guide/
+
+In general:
+- Use git for everything that requires version tracking
+- Do not use git for measurement data, videos, images, ... (that do not require versioning)
+- Do not add versions to your filenames. Git will handle the versioning.
+
+## Create a ssh key pair
+
+We need a ssh key pair for verification in github. The key pair can be shared between windows and WSL if necessary
+
+### create ssh key in Windows
+```
+ssh-keygen
+```
+A password is not necessary.
+
+### (optional) copy Windows ssh key into wsl environment
+
+You can share the same ssh key between windows and wsl. To do so open wsl by typing:
+```
+wsl
+```
+
+In wsl:
+
+```
+cp -r /mnt/c/Users/<USER>/.ssh ~/.ssh
+```
+\<USER> must be replaced with your username
+
+```
+chmod 600 ~/.ssh/id_ed25519
+```
+if you have used a different name for your ssh key, change the file name in the command above.
+
+## Creating a GitHub account
+
+Create an account on
+```
+https://github.com/
+```
+
+### Adding your ssh key to github
+
+This is necessary for every device!
+
+1. Click on your Icon in the top right and select `Settings`
+![[add_ssh_key_1.png]]
+
+2. Click on `SSH and GPG keys`
+![[add_ssh_key_2.png]]
+
+3. Click on `New SSH Key`, past your generated ssh key and use a usefull `Title` for your SSH Key. For example "Work Laptop".
+![[add_ssh_key_4.png]]
+
+## Clone repository
+
+Open the repos main page, click on Code and select SSH. Copy the URL.
+![[clone_repo.png]]
+
+You are free to use Git Desktop, Git Bash, Tortoise Git or whatever.
+For this document we use Tortoise Git. (see [[README#install Tortoise Git]])
+
+1. open the folder you want to past the repo in and select git clone from the context menu.
+![[clone_repo_2.png]]
+
+2. past the URL and click OK.
+![[clone_repo_3.png]]
+
+3. The repo will be copied to you local system.
+![[clone_repo_4.png]]
+
+## working with git
+
+You can do any modifications you want in you local repo. (Although deleting the `.git` folder is not recommended)
+
+### commiting changes
+
+One you are at a point, where your changes are a `finished subproject` you can `commit` your changes using `git commit`. 
+- Committed changes are still local. 
+- You can decide, if you want to commit to the main branch, another branch or create a new one. (see [[README#branches]])
+- You must leave a short message, describing the changes in the current commit
+- Select the files you want to include in the commit
+![[commit_1.png]]
+
+### push local commits
+
+To upload your local commits, use git push.
+
+### pull online changes
+
+To get the online changes, use git pull.
+
+### branches
+
+Branches are use to develop different features in parallel without being dependent on other development processes. Use a dedicated branch for developing sub projects and merge the branch into the main branch when finished.
+
+### .gitignore
+
+The `.gitignore` file can be used to exclude files from being versioned. Use it!
+For example `__pycache__` can generally be part of `.gitignore`. Tortoise git provides a context menu option for quickly adding files to `.gitignore`.
+
+## install Tortoise Git
+
+Tortoise Git extends your windows context menu by usefull git tools.
+
+TBD
