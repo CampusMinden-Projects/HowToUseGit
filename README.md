@@ -1,13 +1,16 @@
 # HowToUseGit
 
-Our projects are stored inside git organizations on github. The organization we be created by us at the beginning of your project. You have to provide your github account name to be added the the `organization`. In each organization is a root repository with the same name as the organization. This root repository contains further repositories as `submodules`. Please add as many repositories as necessary to seperate logical project parts from each other.
-We encourage you to use git through your project development process and to take advantage of gits features.
-This quick guide provides a basic stating point for working with git. For more information use google or follow the guide on https://rogerdudler.github.io/git-guide/
+This quick guide provides a basic stating point for working with git. For more information use google or follow the guide on https://rogerdudler.github.io/git-guide/.
 
 In general:
 - Use git for everything that requires version tracking
 - Do not use git for measurement data, videos, images, ... (that do not require versioning)
 - Do not add versions to your filenames. Git will handle the versioning.
+
+Our projects are stored inside git organizations on github. The organization we be created by us at the beginning of your project. You have to provide your github account name to be added the the `organization`. In each organization is a root repository with the same name as the organization. This root repository contains further repositories as `submodules`. Please add as many repositories as necessary to seperate logical project parts from each other.
+Documentation on how to use each subproject should be done in the `README.md` file of each repo.
+
+We encourage you to use git through your project development process and to take advantage of gits features.
 
 ## Create a ssh key pair
 
