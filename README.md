@@ -50,12 +50,15 @@ https://github.com/
 This is necessary for every device!
 
 1. Click on your Icon in the top right and select `Settings`
+
 ![Add SSH Key 1](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_1.png?raw=true)
 
 2. Click on `SSH and GPG keys`
+
 ![Add SSH Key 2](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_2.png?raw=true)
 
 3. Click on `New SSH Key`, past your generated ssh key and use a usefull `Title` for your SSH Key. For example "Work Laptop".
+
 ![Add SSH Key 4](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_4.png?raw=true)
 
 ## Clone repository
