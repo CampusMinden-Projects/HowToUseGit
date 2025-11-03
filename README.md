@@ -12,6 +12,13 @@ Documentation on how to use each subproject should be done in the `README.md` fi
 
 We encourage you to use git through your project development process and to take advantage of gits features.
 
+## install git
+
+download the latest git version from
+```
+https://git-scm.com/install/
+```
+
 ## Create a ssh key pair
 
 We need a ssh key pair for verification in github. The key pair can be shared between windows and WSL if necessary
