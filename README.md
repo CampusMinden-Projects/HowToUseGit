@@ -12,12 +12,6 @@ Documentation on how to use each subproject should be done in the `README.md` fi
 
 We encourage you to use git through your project development process and to take advantage of gits features.
 
-## install git
-
-download the latest git version from
-```
-https://git-scm.com/install/
-```
 
 ## Create a ssh key pair
 
@@ -27,7 +21,11 @@ We need a ssh key pair for verification in github. The key pair can be shared be
 ```
 ssh-keygen
 ```
-A password is not necessary.
+Just proceed with `Enter`. A password is not necessary.
+To show the key again use (you may change the path to your file).
+```
+cat C:\Users\<USER>/.ssh/id_ed25519
+```
 
 ### (optional) copy Windows ssh key into wsl environment
 
@@ -70,6 +68,28 @@ This is necessary for every device!
 3. Click on `New SSH Key`, past your generated ssh key and use a usefull `Title` for your SSH Key. For example "Work Laptop".
 
 ![Add SSH Key 4](https://github.com/CampusMinden-Projects/HowToUseGit/blob/main/images/add_ssh_key_4.png?raw=true)
+
+## install git
+
+Download the latest git version from
+```
+https://git-scm.com/install/
+```
+Click `next` through the whole installation.
+
+## install Tortoise Git
+
+Tortoise Git extends your windows context menu by usefull git tools. You can download it from
+```
+https://tortoisegit.org/download/
+```
+Click `next` through the whole installation and run the `first start wizard`.
+
+In the `first start wizard`:
+1. Set the language to `english`.
+2. Set the Path to `C:\Program Files\Git\bin` (if you have not changed the installation path; otherwise fill in the right path).
+3. Set your commit credentials. These are used to determine who added which code.
+4. Set the SSH client to `OpenSSH`.
 
 ## Clone repository
 
@@ -118,8 +138,3 @@ Branches are use to develop different features in parallel without being depende
 The `.gitignore` file can be used to exclude files from being versioned. Use it!
 For example `__pycache__` can generally be part of `.gitignore`. Tortoise git provides a context menu option for quickly adding files to `.gitignore`.
 
-## install Tortoise Git
-
-Tortoise Git extends your windows context menu by usefull git tools.
-
-TBD
