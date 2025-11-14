@@ -17,7 +17,7 @@ We encourage you to use git through your project development process and to take
 
 We need a ssh key pair for verification in github. The key pair can be shared between windows and WSL if necessary
 
-### create ssh key in Windows
+### create ssh key in Windows using the command line
 ```
 ssh-keygen
 ```
