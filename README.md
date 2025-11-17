@@ -1,6 +1,6 @@
 # HowToUseGit
 
-This quick guide provides a basic stating point for working with git. For more information use google or follow the guide on https://rogerdudler.github.io/git-guide/.
+This quick guide provides a basic stating point for working with git. For more information use google or follow the guide on https://rogerdudler.github.io/git-guide/. To learn git take a look at https://learngitbranching.js.org.
 
 In general:
 - Use git for everything that requires version tracking
